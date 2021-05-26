@@ -1,4 +1,4 @@
-.card-home{
+.card-room{
     display: flex;
     justify-content: space-between;
     width: 13rem;
@@ -26,7 +26,7 @@
       justify-content: space-between;
       flex-direction: row;
       flex: 1;
-      margin-top: 10px;
+
       &-description{
         display: flex;
         flex-direction: column;

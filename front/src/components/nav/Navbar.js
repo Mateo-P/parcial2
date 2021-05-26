@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import { FormattedMessage } from "react-intl";
-
+import { I18nSelect } from "../i18n-select/I18nSelect";
 export const Navbar = ({ setLanguage }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,7 +29,7 @@ export const Navbar = ({ setLanguage }) => {
               </Link>
             </div>
             <div className="navbar-nav-controls">
-             {/** here lang selector */  }
+             <I18nSelect setLanguage={setLanguage}></I18nSelect>
             </div>
           </div>
         </div>
