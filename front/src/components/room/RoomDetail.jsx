@@ -1,5 +1,7 @@
 import React from 'react'
 import "./RoomDetail.scss"
+import { FormattedMessage } from "react-intl";
+   
 function RoomDetail({room}) {
 
     return (
@@ -8,8 +10,8 @@ function RoomDetail({room}) {
   <tr>
     <th>#</th>
     <th>ID</th>
-    <th>Device</th>
-    <th>value</th>
+    <th><FormattedMessage id="device"/></th>
+    <th><FormattedMessage id="value"/></th>
   </tr>
 
   {room.devices.map((device,i)=>{return (

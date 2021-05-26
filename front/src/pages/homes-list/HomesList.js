@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { FormattedMessage } from "react-intl";
+  
 import {Card} from "../../components/card/Card"
 import "./HomesList.scss";
 import { getHomes } from "../../services/utils";
@@ -13,7 +15,7 @@ console.log(homes)
   return (
     <div className="container home">
       <h1>
-        My spaces
+        <FormattedMessage id="spaces"/>
       </h1>
       <div className="homeList">
       {homes && homes.map((home)=> <Card props={home}/>)}

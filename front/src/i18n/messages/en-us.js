@@ -13,5 +13,7 @@ export default {
     example: "You have {money} million",
     myRooms: "My rooms",
     stats: "Stats",
+    device:"Device",
+    value:"value"
   },
 };
